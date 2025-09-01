@@ -23,7 +23,7 @@ y_train = to_categorical(y_train, num_classes=10)
 y_test = to_categorical(y_test, num_classes=10)
 
 
-# model construction
+# model construction (簡易2層)
 
 """
 
@@ -75,4 +75,4 @@ model.fit(x_train, y_train, epochs=5, batch_size=64,
 test_loss, test_acc = model.evaluate(x_test, y_test, verbose=0)
 print("test accuracy: ", test_acc)
 
-model.save("resnet_mnist.h5")
+model.save("resnet_mnist.keras")
