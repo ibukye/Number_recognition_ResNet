@@ -28,7 +28,7 @@ class ImageData(BaseModel):
 from fastapi.staticfiles import StaticFiles
 
 # 静的ファイルを /public にマウント
-app.mount("/public", StaticFiles(directory=os.path.join(os.path.dirname(__file__), "..", "public")), name="public")
+app.mount("/public", StaticFiles(directory="public"), name="public")
 
 # ルートで index.html を返す
 @app.get("/", response_class=FileResponse)
