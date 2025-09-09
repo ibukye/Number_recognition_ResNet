@@ -4,3 +4,4 @@ pydantic
 Pillow
 numpy
 tensorflow
+opencv-python
